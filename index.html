@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Phone</title>
+
+    <link rel="shortcut icon" href="img/apple.svg" type="image/x-icon">
+
+    <link rel="preload" href="fonts/SFUIText-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/SFUIText-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/SFUIText-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/choices.min.js"></script>
+    <script defer src="js/script.js"></script>
+    
+</head>
+<body>
+  <header class="header">
+      <div class="conteiner">
+          <div class="header_container">
+              <img src="img/apple.svg" alt="This is logo!" class="geader_logo">
+              <nav class="header_navigation navigation">
+                  <ul class="navigation_list">
+                      <li class="navigation_item"><a href="#">Оформить предзаказ</a></li>
+                      <li class="navigation_item"><a href="#">Доставка</a></li>
+                      <li class="navigation_item"><a href="#">Официальный сайт Apple</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </header>
+  <main class="main">
+      <section class="main_section offer">
+          <div class="offer_container">
+              <h1 class="offer_main-title">Iphone 13</h1>
+              <h2 class="offer_title">Ближе, чем можно представить.</h2>
+              <p class="offer_price">от 79 000 руб.</p>
+              <button class="offer_btn btn">Оформить предзаказ</button>
+          </div>
+      </section>
+      <section class="main_section features">
+          <div class="container">
+              <h2 class="features_title">Iphone 13. ничего лишнего</h2>
+              <ul class="features_list">
+                  <li class="features_item card">
+                      <img src="img/camera.jpg" alt="This is an Iphone camera!" class="card_pictures">
+                      <h3 class="card_title">Камера</h3>
+                      <p class="card_description">Система камер PRO</p>
+                  </li>
+                  <li class="features_item card">
+                      <img src="img/compect.jpg" alt="This is an Iphone camera!" class="card_pictures">
+                      <h3 class="card_title">Комплектация</h3>
+                      <p class="card_description">Зарядное устрйство. Беспроводные наушники.</p>
+                  </li>
+                  <li class="features_item card">
+                      <img src="img/color.jpg" alt="This ia an Iphone camera" class="card_pictures">
+                      <h3 class="card_title">Цвет</h3>
+                      <p class="card_description">Глубоководеый синий. Графитовый</p>
+                  </li>
+                   <li class="features_item card">
+                       <img src="img/frame.jpg" alt="This is an Iphone camera" class="card_pictures">
+                       <h3 class="card_title">Корпус</h3>
+                       <p class="card_description">Водопроницаемый и протиаоударный корпус.</p>
+                   </li>
+                   <li class="features_item card">
+                       <img src="img/line.jpg" alt="This is an Iphone camera!" class="card_pictures">
+                       <h3 class="card_title">Линейка</h3>
+                       <p class="card_description">Iphone 13,Iphone 13 mini, Iphone 13 pro и 13 pro max.</p>
+                   </li>
+                   <li class="features_item card">
+                       <img src="img/charger_magnetic.jpg" alt="This is an Iphone camera" class="card_pictures">
+                       <h3 class="card_title">Зарядка</h3>
+                       <p class="card_description">Аккумулятор-маггнит</p>
+                   </li>
+              </ul>
+          </div>
+      </section>
+      <section class="main_section order">
+          <div class="container">
+              <h2 class="order_title">Оформить предзаказ</h2>
+          </div>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST"class="order_form form" id="form-order">
+              <fieldset class="form_box">
+                  <legend class="form_title-box">Персональные данные</legend>
+                  <label for="fullName" class="form_label">ФИО <sup>*</sup></label>
+                  <input type="text"class="form_input" id="fullName"name="fullName" required>
+
+                  <label for="phone" class="form_label" class="form_label">Телефон <sup>*</sup></label>
+                  <input type="text" class="form_input" id="phone" name="phone" required>
+
+                  <label for="mail" class="for_label">E-mail <sup>*</sup></label>
+                  <input type="email" class="form_input" id="mail" name="mail" required>
+              </fieldset>
+              <fieldset class="form_box"> <legend class="form_title-box">Адрес доставки</legend>
+
+                <label for="fullName" class="form_label">Город <sup>*</sup></label>
+                    <input type="text" class="form_input" id="fullName" name="city" required>
+
+                    <label for="Phone" class="form_label">Индекс <sup>*</sup></label>
+                    <input type="text" class="form_input" id="ind" name="ind" required>
+
+                    <label for="mail" class="form_label">Адрес <sup>*</sup></label>
+                    <input type="mail" class="form_input" id="adress" name="adress" readonly>
+
+              </fieldset>
+              <fieldset class="form_box">
+                <legend class="form_title-box">Выбор модели</legend>
+
+                <label for="model" class="form_label">Модель</label>
+                    <select name="model" id="model" class="form_select">
+                        <option value="iPhone 13">iPhone 13</option>
+                        <option value="iPhonem13ini">iPhone mini</option>
+                        <option value="iPhone13Pro">iPhone Pro</option>
+                        <option value="iPhone13ProMax">iPhone 13 Pro Max</option>
+                    </select>
+
+                    <label for="model" class="form_label">Цвет</label>
+                    <select name="model" id="color" class="form_select">
+                        <option value="Black">Черный</option>
+                        <option value="White">Белый</option>
+                        <option value="Blue">Глубоководный синий</option>
+                        <option value="Gray">Графитовый</option>
+                    </select>
+
+              </fieldset>
+              <fieldset class="form_box">
+                  <legend class="form_title-box">Аксессуары</legend>
+                  <label class="form_label checkbox">
+                    <input class="checkbox_input" type="checkbox" name="accessories" id="case">Чехол
+                    </label>
+
+                    <label class="form_label checkbox">
+                        <input class="checkbox_input" type="checkbox" name="accessories" id="case">Наушники    
+                    </label>
+
+                    <label class="form_label checkbox">
+                        <input class="checkbox_input" type="checkbox" name="accessories" id="case">Защитное стекло
+                    </label>
+
+                    <label class="form_label checkbox">
+                        <input class="checkbox_input" type="checkbox" name="accessories" id="case">Зарядное устройство  
+                    </label>
+                </fieldset>
+                </form>
+              <button type="submit" class="form_submit btn" form="form-order">Оформить</button>
+          
+      </section>
+  </main>
+  <footer class="footer"></footer>
+</body>
+</html>
